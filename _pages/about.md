@@ -23,8 +23,6 @@ author_profile: true
 
 I am a BTECH undergraduate from Amity University, Delhi and have majored in Electronics and Communication (ECE).
 
-Take a look at my [Resume]({% link resume/index.html %})
-
 ## Career Vision
 
 I am passionate about applying my knowledge in Embedded Systems and Internet of Things (IoT), in areas such as home automation and automotive fields. In doing so, I hope to improve the efficiency of people's daily life, where mundane as well as critical tasks can be made less tedious. Moreover, I would love to work in a challenging environment which would demand all my skills to innovate as well as improve my grasp on existing technologies.
