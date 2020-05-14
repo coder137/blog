@@ -1,7 +1,7 @@
 # Add the Mast-Head links here
 main:
-  - title: About
-    url: /about/
+  # - title: About
+  #   url: /about/
   - title: Projects
     url: /projects/
   - title: Tutorials

@@ -63,7 +63,7 @@ I will be storing this parameters and adding this project to the `ConfigProject`
 
 ### After running `make menuconfig`
 
-![fileStructure](/assets/images/2018-06-18/fileStructure.png)
+![fileStructure]({{ site.baseurl }}/assets/images/2018-06-18/fileStructure.png)
 
 **Only run `make menuconfig`, do NOT run `make` after that.**
 
@@ -77,7 +77,7 @@ Integrate ESP-IDF with Eclipse
 
 Import Project as a Makefile, since we will be using `make build` and `make flash` commands
 
-![importScreen](/assets/images/2018-06-18/importScreen.png)
+![importScreen]({{ site.baseurl }}/assets/images/2018-06-18/importScreen.png)
 
 ### Import Toolchain
 
@@ -85,13 +85,13 @@ Import the `Cygwin GCC Toolchain` since the ESP-IDF MYSY2 configuration most clo
 
 Do not worry, we will configure the appropriate paths later in this tutorial.
 
-![importToolchain](/assets/images/2018-06-18/importToolchain.png)
+![importToolchain]({{ site.baseurl }}/assets/images/2018-06-18/importToolchain.png)
 
 ### Initial Screen
 
 This is the initial screen. As you can see, the default settings cannot find your ESP-IDF packages and build tools.
 
-![initialScreen](/assets/images/2018-06-18/initialScreen.png)
+![initialScreen]({{ site.baseurl }}/assets/images/2018-06-18/initialScreen.png)
 {: .full}
 
 ## Settings (Added once every project)
@@ -102,7 +102,7 @@ These settings need to be added to successfully link your libraries and tools to
 
 Add `python ${IDF_PATH}/tools/windows/eclipse_make.py`
 
-![c_builder](/assets/images/2018-06-18/c_builder.png)
+![c_builder]({{ site.baseurl }}/assets/images/2018-06-18/c_builder.png)
 
 ### Environment Tab
 
@@ -122,7 +122,7 @@ Setting your environment variables
 **If you installed msys32 to a different directory then you’ll need to change these PATHS to match**
 {: .notice--warning}
 
-![c_environment](/assets/images/2018-06-18/c_environment.png)
+![c_environment]({{ site.baseurl }}/assets/images/2018-06-18/c_environment.png)
 
 ### Pre-Processor Includes
 
@@ -136,9 +136,9 @@ Setting up your compilation tools
 
 	`xtensa-esp32-elf-gcc ${FLAGS} -E -P -v -dD "${INPUTS}"`
 
-![c_output_parser](/assets/images/2018-06-18/c_output_parser.png)
+![c_output_parser]({{ site.baseurl }}/assets/images/2018-06-18/c_output_parser.png)
 
-![c_compiler_settings](/assets/images/2018-06-18/c_compiler_settings.png)
+![c_compiler_settings]({{ site.baseurl }}/assets/images/2018-06-18/c_compiler_settings.png)
 
 ## Build
 
@@ -148,13 +148,13 @@ Build the project by either `Ctrl + B` or right click on project and click `buil
 
 **To successfully compile right click on project and click `clean project` option. Build the project after this step and it should successfully compile**
 
-![buildSuccess](/assets/images/2018-06-18/buildSuccess.png)
+![buildSuccess]({{ site.baseurl }}/assets/images/2018-06-18/buildSuccess.png)
 
 ## Flash
 
 Right Click project and go to `build targets` => `create`
 
-![flashCreate](/assets/images/2018-06-18/flashCreate.png)
+![flashCreate]({{ site.baseurl }}/assets/images/2018-06-18/flashCreate.png)
 
 Once the `flash` target has been created double click and you should see your binaries getting flashed to your ESP32
 

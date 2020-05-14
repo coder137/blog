@@ -51,7 +51,7 @@ char *(*v)(int, void *)
 char *v(int test1, void *test2);
 ```
 
-Take a look at this [example](/assets/code/2018-06-09-function-pointer/basicExample/main.c) to understand a simple implementation of the above declaration
+Take a look at this [example]({{ site.baseurl }}/assets/code/2018-06-09-function-pointer/basicExample/main.c) to understand a simple implementation of the above declaration
 
 ### Why is a function pointer important?
 
@@ -93,7 +93,7 @@ void yourNewPrintFunction(int newData)
 }
 ```
 
-Download this example [here](/assets/code/2018-06-09-function-pointer/addFunctionToFunctionArgument/main.c)
+Download this example [here]({{ site.baseurl }}/assets/code/2018-06-09-function-pointer/addFunctionToFunctionArgument/main.c)
 
 ## Conclusion
 

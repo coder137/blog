@@ -116,7 +116,7 @@ ls
 ```
 You will see output like this
 
-![navigateToPath](/assets/images/2018-06-10/navigateToPath.png)
+![navigateToPath]({{ site.baseurl }}/assets/images/2018-06-10/navigateToPath.png)
 
 ### Open ESP-IDF menuconfig
 
@@ -124,15 +124,15 @@ You will see output like this
 make menuconfig
 ```
 
-![makeMenuconfig](/assets/images/2018-06-10/makeMenuconfig.png)
+![makeMenuconfig]({{ site.baseurl }}/assets/images/2018-06-10/makeMenuconfig.png)
 
 ### Set the COM Port of your device
 
 Find your device COM Port
-![selectCOMPort](/assets/images/2018-06-10/selectCOMPort.png)
+![selectCOMPort]({{ site.baseurl }}/assets/images/2018-06-10/selectCOMPort.png)
 
 Navigate to Serial Flasher Config (to set the COM port of your device)
-![setCOMPort](/assets/images/2018-06-10/setCOMPort.png)
+![setCOMPort]({{ site.baseurl }}/assets/images/2018-06-10/setCOMPort.png)
 
 **NOTE: For linux or mac your COM Port might be /dev/ttyUSB0**
 {: .notice--warning}
@@ -140,7 +140,7 @@ Navigate to Serial Flasher Config (to set the COM port of your device)
 ### Set the example Configuration number (OPTIONAL)
 
 Change `Example Configuration` number here `(D2)`
-![setBlinkPin](/assets/images/2018-06-10/setBlinkPin.png)
+![setBlinkPin]({{ site.baseurl }}/assets/images/2018-06-10/setBlinkPin.png)
 
 For most devices in ESP32 the internal LED is attached to pin D2 which is pin number 2
 
@@ -161,17 +161,17 @@ We can also change `CONFIG_BLINK_GPIO` (which is set inside sdkconfig.h) to the 
 
 `make`
 
-![make](/assets/images/2018-06-10/make.png)
+![make]({{ site.baseurl }}/assets/images/2018-06-10/make.png)
 
 Please note that it can take a significant amount of time to compile all the libraries when running your first `make` command.
 
 ### Make flash the image
 
 Start the `make flash` command and you should see it connecting to your device
-![makeFlashStart](/assets/images/2018-06-10/makeFlashStart.png)
+![makeFlashStart]({{ site.baseurl }}/assets/images/2018-06-10/makeFlashStart.png)
 
 When `make flash` is completed, this will be your output
-![makeFlashEnd](/assets/images/2018-06-10/makeFlashEnd.png)
+![makeFlashEnd]({{ site.baseurl }}/assets/images/2018-06-10/makeFlashEnd.png)
 
 
 ## Conclusion

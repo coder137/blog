@@ -74,7 +74,7 @@ int main()
   return 0;
 }
 ```
-Download the code [here](/assets/code/2018-06-08-pointer-to-void/genericPrintFunction/main.c)
+Download the code [here]({{ site.baseurl }}/assets/code/2018-06-08-pointer-to-void/genericPrintFunction/main.c)
 
 ### Code Explanation
 
@@ -160,7 +160,7 @@ int main()
     return 0;
 }
 ```
-Download the code [here](/assets/code/2018-06-08-pointer-to-void/genericStructPrint/main.c)
+Download the code [here]({{ site.baseurl }}/assets/code/2018-06-08-pointer-to-void/genericStructPrint/main.c)
 
 ### Code Explanation
 
@@ -173,9 +173,9 @@ We receive a pointer to the struct inside the function and after type casting we
 Another data type type does not work with void pointer is float, i.e we cannot type cast `(float) floatData` and expect it to work,
 There are different ways to circumvent this issue, given below
 
-We can circumvent this using [Method1](/assets/code/2018-06-08-pointer-to-void/bypassingFloatRestriction/main.c)
+We can circumvent this using [Method1]({{ site.baseurl }}/assets/code/2018-06-08-pointer-to-void/bypassingFloatRestriction/main.c)
 
-We can circumvent this also using method used for structures [Method2](/assets/code/2018-06-08-pointer-to-void/bypassingFloatRestriction2/main.c)
+We can circumvent this also using method used for structures [Method2]({{ site.baseurl }}/assets/code/2018-06-08-pointer-to-void/bypassingFloatRestriction2/main.c)
 
 ## Conclusion
 
