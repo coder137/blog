@@ -30,13 +30,13 @@ Setting a software delay in your FreeRTOS tasks, that enables other waiting task
 
 ## Notes
 
-Check the [first Task tutorial]({% link _posts/2018-06-25-create-tasks.md %}) where the vTaskDelay API was discussed.
+Check the [first Task tutorial]({{ site.baseurl }}{% link _posts/2018-06-25-create-tasks.md %}) where the vTaskDelay API was discussed.
 
 **Never use Software delays such as these in any Hardware or Software Interrupt. This is bad practice and can cause your ESP32 to enter Kernel panic and force restart**
 
 ## Why do we need to "Delay Tasks"
 
-Looking back at our first tutorial [Introduction to FreeRTOS]({% link _posts/2018-06-07-introduction-to-freertos.md %}), this following example was given
+Looking back at our first tutorial [Introduction to FreeRTOS]({{ site.baseurl }}{% link _posts/2018-06-07-introduction-to-freertos.md %}), this following example was given
 
 "Say you need to read an Analog Input from a device and subsequently drive a motor. However you also want to send an SMS using a GSM Module every 20 seconds"
 

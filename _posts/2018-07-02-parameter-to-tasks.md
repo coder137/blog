@@ -28,9 +28,9 @@ Learn to add dynamic parameter to Tasks in FreeRTOS with the ESP32 and ESP-IDF
 
 ## Notes
 
-Check the previous tutorial on [Creating a Basic Task]({%link _posts/2018-06-25-create-tasks.md%})
+Check the previous tutorial on [Creating a Basic Task]({{ site.baseurl }}{%link _posts/2018-06-25-create-tasks.md%})
 
-Check this tutorial on [Pointer to void]({%link _posts/2018-06-08-pointer-to-void.md %})
+Check this tutorial on [Pointer to void]({{ site.baseurl }}{%link _posts/2018-06-08-pointer-to-void.md %})
 
 Import your project from one of [these configured builds](https://github.com/coder137/ESP32-Repo/tree/master/Configs/Configured)
 
@@ -51,7 +51,7 @@ BaseType_t xTaskCreate(TaskFunction_t pvTaskCode,
                           TaskHandle_t *pxCreatedTask)
 ```
 
-We learnt the usage of this API is the [previous tutorial]({%link _posts/2018-06-25-create-tasks.md%})
+We learnt the usage of this API is the [previous tutorial]({{ site.baseurl }}{%link _posts/2018-06-25-create-tasks.md%})
 
 However, since we just needed to create Basic Tasks we did not use many parameters, mainly the `void *pvParameters` and the `TaskHandle_t *pxCreatedTask` parameters.
 

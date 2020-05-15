@@ -21,8 +21,8 @@ header:
 author_profile: true
 ---
 
-### [Posts by year]({% link _pages/year_archive.md %})
+### [Posts by year]({{ site.baseurl }}{% link _pages/year_archive.md %})
 
-### [Posts by categories]({% link _pages/category_archive.md %})
+### [Posts by categories]({{ site.baseurl }}{% link _pages/category_archive.md %})
 
-### [Posts by tags]({% link _pages/tag_archive.md %})
+### [Posts by tags]({{ site.baseurl }}{% link _pages/tag_archive.md %})

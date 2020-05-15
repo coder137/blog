@@ -30,4 +30,4 @@ author_profile: true
 
 ### [Campaign Page](https://ketto.org/green-homes-project)
 
-### [Contributors List]({% link projects/green-homes-project/contributors.md %})
+### [Contributors List]({{ site.baseurl }}{% link projects/green-homes-project/contributors.md %})

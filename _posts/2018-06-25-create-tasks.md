@@ -30,13 +30,13 @@ Get started with creating a basic task in FreeRTOS with the ESP32 and ESP-IDF
 
 Before starting make sure that you have downloaded the [FreeRTOS Books and Code Examples.](https://www.freertos.org/Documentation/RTOS_book.html)
 
-Check this [Introduction to FreeRTOS]({%link _posts/2018-06-07-introduction-to-freertos.md %})
+Check this [Introduction to FreeRTOS]({{ site.baseurl }}{%link _posts/2018-06-07-introduction-to-freertos.md %})
 
 **Since we are using the ESP-IDF Framework with FreeRTOS, we do not need to call `vTaskStartScheduler()` in main. However when porting to different microcontrollers we will have to implement this.**
 
 ## What are Tasks in FreeRTOS
 
-Each repetitive loop operation which needs to run in its own period is added into a task. If we look at back our first tutorial, [Introduction to FreeRTOS]({%link _posts/2018-06-07-introduction-to-freertos.md %}) we have taken a simple example that demonstrates this.
+Each repetitive loop operation which needs to run in its own period is added into a task. If we look at back our first tutorial, [Introduction to FreeRTOS]({{ site.baseurl }}{%link _posts/2018-06-07-introduction-to-freertos.md %}) we have taken a simple example that demonstrates this.
 
 ### Blocked State & Active State of Task
 
