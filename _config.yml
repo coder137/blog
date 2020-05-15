@@ -9,11 +9,16 @@ minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt"
 locale: "en-US"
 title: "Homepage"
 title_separator: "-"
-name: "Niket Naidu" # &name is a YAML anchor which can be *referenced later
-description: "Generic Programmer"
+name: &name "Niket Naidu" # &name is a YAML anchor which can be *referenced later
+description: &description "Embedded Systems Programmer"
 url: https://coder137.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl: "/" # the subpath of your site, e.g. "/blhttps://github.com/mmistakes/minimal-mistakes/blob/master/docs/_config.ymlog"
-repository: "coder137/coder137.github.io"
+# https://github.com/mmistakes/minimal-mistakes/blob/master/docs/_config.yml
+baseurl: "/blog" # the subpath of your site, e.g. "/blog"
+repository: "coder137/blog"
+teaser: "/assets/images/c_image.jpg"
+logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
+masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
+words_per_minute: 200
 
 # Comments
 comments:
@@ -45,16 +50,29 @@ staticman:
 atom_feed:
   path                   : # blank (default) uses feed.xml
 
-
+# Author
 author:
-    name: "Niket Naidu"
+    name: *name
     avatar: /assets/images/logo.jpg
-    bio: > # TODO, Update Further
-        Embedded Systems Enthusiast
-    location: "India"
-    email: coder137@gmail.com
-    github: coder137
-    linkedin: niket-naidu-30090a134
+    bio: *description
+    location: "San Jose, CA"
+    links: &links
+      - label: "Email"
+        icon: "fas fa-fw fa-envelope-square"
+        url: "mailto:niketnaiduus@gmail.com"
+      - label: "Linkedin"
+        icon: "fab fa-fw fa-linkedin"
+        url: "https://www.linkedin.com/in/niket-naidu-30090a134/"
+      - label: "GitHub"
+        icon: "fab fa-fw fa-github"
+        url: "https://github.com/coder137"
+      - label: "Gitlab"
+        icon: "fab fa-fw fa-gitlab"
+        url: "https://gitlab.com/coder137"
+
+# Site Footer
+footer:
+    links: *links
 
 # Reading Files
 include:
@@ -111,11 +129,18 @@ kramdown:
     block:
       line_numbers: true
 
-# Add Collections here
+# Sass/SCSS
+sass:
+  sass_dir: _sass
+  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
 
-# Add posts teaser
-teaser: /assets/images/c_image.jpg
+# Outputting
+## permalink: /:categories/:title/
+permalink: /:year/:month/:day/:title/
+paginate: 5 # amount of posts to show
+paginate_path: /page:num/
+timezone: America/Los_Angeles # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Defaults
 defaults:
@@ -151,12 +176,6 @@ defaults:
       sidebar:
         nav: "docs"
 
-# Outputting
-## permalink: /:categories/:title/
-permalink: /:year/:month/:day/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: Asia/Kolkata
 
 # Plugins (previously gems:)
 plugins:
@@ -175,6 +194,7 @@ whitelist:
   - jekyll-gist
   - jekyll-feed
   - jemoji
+  - jekyll-include-cache
 
 # Archives
 category_archive:
